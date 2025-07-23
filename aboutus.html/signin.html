@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+                                              <!-- signin page -->
+    <style>
+    body{
+        background-color: #06B48B;
+    }
+    .signin{
+        background-color: #FFFFE4;
+        text-align: center;
+        margin-right: 200px;
+        margin-left: 200px;
+        height: 500px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-radius: 20px;
+    }
+    .buttonin{
+      margin-right: 20px;
+    }
+  </style>
+                                        <!-- javascript for signin page -->
+    <script>
+         function validate()
+   {
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+
+    if (username.value.trim() == "")
+      {
+        username.style.border = " solid 4px red"
+        document.getElementById("lbluser").style.visibility = "visible";
+        return false;
+      }
+      else if (password.value.trim() == "")
+        {
+          password.style.border = " solid 4px red"
+          document.getElementById("lblpassword").style.visibility = "visible";
+          return false;
+        }
+        else if (password.value.length<5)
+          {
+            alert ("Password too short")
+          }
+          else
+          {
+                                                    //fix this redirecting  
+            // window.location.href = "/aboutus.html";
+            return true;
+          }
+        
+   }
+    </script>
+                                              <!-- signin form  -->
+  
+</head>
+<body>
+<form onsubmit="return validate();">
+    <div class="signin">
+        <div class="signin2">
+          <br><br><br><br><br><br><br><br><br>
+            <h1><b>Welcome back!</b></h1>
+            <h5>login to Grocery sansar</h5><br><br>
+                                                    <!--ids are same as in sign up  -->
+            <input type="text" id="username" placeholder="Username">
+            <label id="lbluser" style="color: red; visibility: hidden;">Invalid</label>
+            <br><br>
+            <input type="password" id="password" placeholder="Password">
+            <label id="lblpassword" style="color: red; visibility: hidden;">Invalid</label><br><br>
+                        <div class="buttonin">
+                          <a href="aboutus.html"><button type="button"><b>submit</b></button></a>
+                        </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

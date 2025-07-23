@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+                                            <!-- Internal Css for sign up -->
+<style>
+body{
+    background-color: #06B48B;
+}                                  
+.signup{
+    background-color: #FFFFE4;
+    text-align: center;
+    margin-top: 160px;
+    margin-right: 200px;
+    margin-left: 200px;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}  
+
+.insidetext{
+    margin-left: 50px;
+}
+</style>
+                                        <!-- internal Js for signup -->
+<script>
+    function validate()
+    {
+        const username = document.getElementById("username");
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const email = document.getElementById("email");
+        const pass = document.getElementById("pass");
+
+         if (username.value.trim() == "")
+         {
+            username.style.border = " solid 4px red"
+            document.getElementById("lbluser").style.visibility = "visible";
+            return false;
+         }
+         else if (fname.value.trim() == "")
+         {
+            return false;
+         }
+         else if (lname.value.trim() == "")
+         {
+            lname.style.border = " solid 4px red"
+            document.getElementById("lblname").style.visibility = "visible";
+            return false;
+         }
+         else if (email.value.trim() == "")
+         {
+            email.style.border = " solid 4px red"
+            document.getElementById("lblemail").style.visibility = "visible";
+            return false;
+         }
+         else if (pass.value.trim() == "")
+         {
+            pass.style.border = " solid 4px red"
+            document.getElementById("lblpass").style.visibility = "visible";
+            return false;
+         }
+         else if (pass.value.length<5)
+         {
+            alert ("Password too short")
+            return false;
+         }
+         else
+         {
+            alert ("Your account has been created, please go back to Homepage")
+            return true;
+         }
+    }
+</script>
+<body>
+                                            <!-- Sign up form section -->
+<form onsubmit="return validate();">
+    <section class="signup">
+        <div class="signup2">
+            <br>
+            <br><br><br><br><br><br><br>
+                <h1><b>Create new account!</b></h1><br><br>
+                <div class="insidetext">
+                <input style="text-align: center;" type="text" id="username" placeholder="Username">
+                <label id="lbluser" style="color: red; visibility: hidden;">Invalid</label>
+                <br><br>
+                <input style="text-align: center;" type="text" id="fname" placeholder="First name">
+                <input style="text-align: center;" type="text" id="lname" placeholder="Last name">
+                <label id="lblname" style="color: red; visibility: hidden;">Invalid</label>
+                <br><br>
+                <input style="text-align: center;" type="email" id="email" placeholder="Email">
+                <label id="lblemail" style="color: red; visibility: hidden;">Invalid</label>
+                <br><br>
+                <input style="text-align: center;" type="password" id="pass" placeholder="password">
+                <label id="lblpass" style="color: red; visibility: hidden;">Invalid</label>
+                <br><br><br>
+                </div>
+                                            <div class="upbutton">
+                
+                <a href="aboutus.html"><button type="daba"><input type="submit"></button></a>
+                                            </div>
+                                            <br><br>
+                <h4> Already have a account? <a href="signin.html"> sign in </a></h4><br>
+        </div>
+    </section>
+</form>
+</body>
+</html>

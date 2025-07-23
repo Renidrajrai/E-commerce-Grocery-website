@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Making form -->
+    <form onsubmit="return validate();">
+        <div class="body1">
+        <div class="form">
+            <br><br><br><br><br><br>
+            <h1>Give Your Feedback</h1>
+            <br>
+            <i>We want to know what you thought of your experience at GrocerySansar so we'd love to hear your feedback</i>
+            <br><br><br><br>
+            <label>Name: </label>
+           <input type="text" id="naam" placeholder="Enter your name">
+           <br><br>
+           <label> Email:</label>
+           <input type="email" id="email" placeholder="Enter your email">
+           <br><br>
+           <label>Gender:</label>
+           <input type="radio" name="option">Male
+           <input type="radio" name="option">Female
+           <input type="radio" name="option">Others
+           <br><br>
+           <label>Give Your Feedback:</label>
+           <br>
+           <textarea id="text" placeholder="write your feedback" rows="20" cols="60"></textarea>
+           <br><br>
+           <input type="submit">
+        </div>
+        </div>
+    </form>
+</body>
+</html>

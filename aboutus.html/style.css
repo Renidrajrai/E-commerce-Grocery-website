@@ -1,0 +1,209 @@
+
+                                                    /* for CVs */
+    
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+                            /* adding Flexcards */
+.box1:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all in ease;
+
+}
+
+.box2:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all in ease;
+}
+
+                            /* for the team members */
+
+.team
+{
+    font-size: 50px;
+    font-family: "anton";
+}
+                            /* for the container */
+.container1
+{
+    margin-left: 20px;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+}
+                             /* for my container */
+    .aj
+    {
+     margin: 20px;
+     text-align: center;    
+    }
+    .aj img{
+        border-radius: 30px;
+    }
+
+                             /* for alisa */
+    .alisa
+    {
+        margin: 20px;
+        text-align: center;
+    }
+    .alisa img
+    {
+        border-radius: 30px;
+    }
+
+                                            /* for renid */
+    .renid
+    {
+         margin: 20px;
+        text-align: center;
+    }
+    .renid img
+    {
+        border-radius: 30px;
+    }
+
+                                            /* for pemba */
+    .pemba
+    {
+        margin: 20px;
+        text-align: center;
+    }
+    .pemba img
+    {
+        border-radius: 30px;
+    }
+
+                                            /* hovering for team */
+    .boxaj:hover
+    {
+        transform: scale(1.05);
+        transition: all in ease;
+    }
+    .boxali:hover
+    {
+        transform: scale(1.05);
+        transition: all in ease;
+    }
+    .boxr:hover
+    {
+        transform: scale(1.05);
+        transition: all in ease;
+    }
+    .boxp:hover
+    {
+        transform: scale(1.05);
+        transition: all in ease;
+    }
+
+                                             /* cv haru suru */
+
+    .bigbox
+    {
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+    }                                
+    .ajcv
+    {
+        background-color:wheat;
+        font-size: 30px;
+        width: 400px;
+        height: 1140px;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .ajcv img
+    {
+            border-radius: 200px;
+            margin-left: 10px;
+            margin-top: 20px;
+    }                                
+
+    .boxeins 
+    {
+          background-color:beige;
+            border: 10px;
+            text-align: center;
+            margin-right: auto;
+            width: 1000px;
+            height: 1200px;
+            font-size: 30px; 
+            color: black;   
+            margin-top: 5px;
+    }
+
+                                                /* for socials logo */
+     .media img
+    {
+      margin-bottom: 20px;
+         width: 60px;
+        border-radius: 10px;
+    }    
+    .instaimg:hover{
+        transform: scale(1.20);
+        transition: ease-out;
+    }     
+                                            
+    .icon img
+    {
+        float: left;
+        margin-right: 1%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+                                                                                     
+                                                    /* for feedback */
+
+    .body1
+    {
+        background-color: wheat;
+        color: black;
+        height: 900px;
+    }
+    
+    .form
+    {
+        text-align: center;
+    }
+    
+    .feed
+    {
+       text-align: center;
+       
+    }
+
+    .button
+    {
+       padding: 50px 50px; 
+       font-size: 30px;
+       margin-bottom: 30px;
+       border-radius: 20px;
+       border: none;
+       background-color: wheat;
+       color: black;
+       cursor: pointer;
+    
+    }
+
+    .buttonh:hover
+    {
+        transform: scale(1.20);
+        transition: all in ease; 
+    }
+                                             /* feedback submit botton */
+   
+    .subbutton  :hover{
+        transform: scale(1.20);
+        transition: all in ease; 
+    }
+
+
+    
