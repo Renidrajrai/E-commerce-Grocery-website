@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Products</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!--linking stylesheet to font-awesome-->
+
+
+   <link rel="stylesheet" href="product.css"> <!--linking stylesheet to product.css-->
+
+   
+   <script src="script.js" defer></script>
+    <!-- nav bar css -->
+    <style>
+      *{
+          text-decoration: none;
+      }
+      .navbar{
+          background: #809671; font-family: calibri; padding-right: 15px; padding-left: 15px;
+      }
+      .navdiv{
+          display: flex; align-items: center; justify-content: space-between;
+      }
+      .logo a{
+          font-size: 50px; font-weight: bold; color: black;
+      }
+      li{
+          list-style: none; display: inline-block;
+      }
+      li a{
+          font-size: 25px; color: black; font-weight: bold; margin-right: 30px;
+      }
+      button{
+          background-color: black; margin-left: 10px; border-radius: 20px; padding: 10px; width: 80px;
+      }
+      button a{
+          color: white; font-weight: bold;
+      }
+      .navhome:hover{
+            color: white;
+        }
+        .navsign:hover{
+            color: wheat;
+        }
+  </style>
+  <!-- add to cart button -->
+  <style>
+   .probutt button{
+      color: white;
+   }
+  </style>
+  <!-- internal js for pop up -->
+  <script>
+   function submitForm() {
+     alert('Your product was sucessfully added to cart');
+   }
+ </script>
+</head>
+ <body>
+     <!-- nav bar  -->
+     <nav class="navbar">
+      <div class="navdiv">
+          <div class="logo"><a href="#">GrocerySansar</a></div>
+          <ul>
+            <li><a class="navhome" href="/Home page/Home.html">Home</a></li>
+            <li><a class="navhome"href="/product.html/product.html">Products</a></li>
+            <li><a class="navhome"href="/Blog page/blog.html">Blog</a></li>
+            <li><a class="navhome"href="/aboutus.html/Research.html">Research</a></li>
+            <li><a class="navhome"href="/aboutus.html/aboutus.html">About us</a></li>
+            <button><a class="navsign"href="/aboutus.html/signin.html">Sign in</a></button>
+            <button><a class="navsign"href="/aboutus.html/signup.html">Sign Up</a></button>
+          </ul>
+      </div>
+  </nav>
+  <hr>
+ <!--creating a class container-->
+
+     <div class="container">                
+   
+    <h3 class="title" style="font-family:'Times New Roman', Times, serif ;">products</h3>   <!-- using inline style css for fonts= weight, size, family-->
+    <h1 style="font-weight: bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif;">FRUITS</h1>
+    <section id="fruits">                                 <!-- creating a id for fruits section -->
+      
+      <div class="products-container">                               <!--creating class product-conatiner to style in css -->
+         <div class="product" data-name="p-1">                 
+           <img src="img/APPLE.jpg" alt="">
+           <h3>Apple</h3>
+           <div class="price">Rs.200 per kg</div>
+           <div class="probutt">
+           <button type="button" onclick="submitForm()">Buy</button>
+           </div>
+         </div>
+  
+         <div class="product" data-name="p-2">
+           <img src="img/bananan.jpg" alt="">
+           <h3>banana</h3>
+           <div class="price">Rs. 350 per kg</div>
+           <div class="probutt">
+            <button type="button" onclick="submitForm()">Buy</button>
+           </div>
+         </div>
+          
+         <div class="product" data-name="p-3">
+           <img src="img/POMOGRANATE.jpg" alt="">
+           <h3>Pomogranate</h3>                          <!-- creating another class inside product-container named product to add image heading and create another class price -->
+           <div class="price">Rs. 350 per kg </div>
+           <div class="probutt">
+            <button type="button" onclick="submitForm()">Buy</button>
+            </div>
+         </div>
+  
+         <div class="product" data-name="p-4">
+           <img src="img/lichii.jpg" alt="">
+           <h3>lichi</h3>
+           <div class="price">Rs.200 per kg</div>
+           <div class="probutt">
+            <button type="button" onclick="submitForm()">Buy</button>
+            </div>
+         </div>
+  
+         <div class="product" data-name="p-5">
+           <img src="img/ORANGE.jpg" alt="">
+           <h3>Orange</h3>
+           <div class="price">Rs.150 per kg</div>
+           <div class="probutt">
+            <button type="button" onclick="submitForm()">Buy</button>
+            </div>
+         </div>
+  
+         <div class="product" data-name="p-6">
+           <img src="img/avacado.jpg" alt="">
+           <h3>avacado</h3>
+           <div class="price">Rs.270 per peice</div>
+           <div class="probutt">
+            <button type="button" onclick="submitForm()">Buy</button>
+            </div>
+         </div>
+
+         <h1 id="heading" style="font-weight: bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif; text-align: left;">Vegetable</h1> <!-- creating a header with instyle css for font= weight size and family -->
+         <section id="Vegetable"></section>       <!-- creating a id for vegetable section -->
+         <div class="products-container"></div>
+         <div class="product" data-name="p-7">
+            <img src="img/carrot.jpg" alt="">
+            <h3>Carrot</h3>
+            <div class="price">Rs.100 per kg</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-8">
+            <img src="img/garlicc.jpg" alt="">
+            <h3>Garlic</h3>
+            <div class="price">Rs.200 per kg</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-9">
+            <img src="img/brinjal.jpg" alt="">
+            <h3>Brinjal</h3>
+            <div class="price">Rs.180 per kg</div> 
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>     <!-- creating another class inside product-container named product to add image heading and create another class price -->
+          </div>
+          <div class="product" data-name="p-10">
+            <img src="img/lettucee.jpg" alt="">
+            <h3>Lettuce</h3>
+            <div class="price">Rs.120 per gram</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-11">
+            <img src="img/potato.jpg" alt="">
+            <h3>Potato</h3>
+            <div class="price">Rs.200 per kg</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-12">
+            <img src="img/cucumber.jpg" alt="">
+            <h3>Cucumber</h3>
+            <div class="price">Rs.180 per kg</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+         <h1 id="heading" style="font-weight: bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif; text-align: left;">Household Products</h1><!-- using inline style css for fonts= weight, size, family-->
+         <section id="Household"></section>       <!-- creating a id for Household section -->
+         <div class="products-container"></div>
+         <div class="product" data-name="p-13">
+            <img src="img/paper towel.jpg" alt="">
+            <h3>Paper Towel</h3>
+            <div class="price">Rs.350 per roll</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-14">
+            <img src="img/pann.jpg" alt="">
+            <h3>Pan</h3>
+            <div class="price">Rs.850</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-15">
+            <img src="img/platess.jpg" alt="">
+            <h3>Plate Set</h3>
+            <div class="price">Rs.240 per piece</div> 
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>   <!-- creating another class inside product-container named product to add image heading and create another class price -->
+          </div>
+          <div class="product" data-name="p-16">
+            <img src="img/broom.jpg" alt="">
+            <h3>Broom Stick</h3>
+            <div class="price">Rs.150 per piece</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-17">
+            <img src="img/knife forks set.jpg" alt="">
+            <h3>Knife Fork and Spoon Set</h3>
+            <div class="price">Rs.680 per set</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          <div class="product" data-name="p-18">
+            <img src="img/kitchentowel.jpg" alt="">
+            <h3>Kitchen Towel</h3>
+            <div class="price">Rs.50 per piece</div>
+            <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+          </div>
+          
+          <h1 id="heading" style="font-weight: bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif; text-align: left;">Meat</h1> <!-- using inline style css for fonts= weight, size, family-->
+          <section id="Meat"></section>                     <!-- creating a id for meat section -->
+          <div class="products-container"></div>
+          <div class="product" data-name="p-19">
+             <img src="img/chickenmeat.jpg" alt="">
+             <h3>Chicken meat</h3>
+             <div class="price">Rs.400 per kg</div>
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+           </div>
+           <div class="product" data-name="p-20">
+             <img src="img/duck neck meat.jpg" alt="">
+             <h3>Duck Neck Meat</h3>
+             <div class="price">Rs.270</div>
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+           </div>
+           <div class="product" data-name="p-21">
+             <img src="img/bacon.jpg" alt="">
+             <h3>Baccon</h3>
+             <div class="price">Rs.480 per kg</div> 
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>                 <!-- creating another class inside product-container named product to add image heading and create another class price -->
+           </div>
+           <div class="product" data-name="p-22">
+             <img src="img/fish fish.jpg" alt="">
+             <h3>fish</h3>
+             <div class="price">Rs.350 per kg</div>
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+           </div>
+           <div class="product" data-name="p-23">
+             <img src="img/goatgoat.jpg" alt="">
+             <h3>Goat meat</h3>
+             <div class="price">Rs.1400 per kg</div>
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+           </div>
+           <div class="product" data-name="p-24">
+             <img src="img/pork meat.jpg" alt="">
+             <h3>Pork Meat</h3>
+             <div class="price">Rs. 600 per kg</div>
+             <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+           </div>
+           <h1 id="heading" style="font-weight: bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif; text-align: left;">Dairy</h1> <!-- using inline style css for fonts= weight, size, family-->
+           <section id="Dairy"></section>             <!-- creating a id for Dairy section -->
+           <div class="products-container"></div> 
+           <div class="product" data-name="p-25">
+              <img src="img/butter.jpg" alt="">
+              <h3>butter</h3>
+              <div class="price">Rs.250 per packet</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+            </div>
+            <div class="product" data-name="p-26">
+              <img src="img/cheese.jpg" alt="">
+              <h3>cheese</h3>
+              <div class="price">Rs.500 per gram</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+            </div>
+            <div class="product" data-name="p-27">
+              <img src="img/dahi.jpg" alt="">
+              <h3>Curd</h3>
+              <div class="price">Rs.430 per liter</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>            <!-- creating another class inside product-container named product to add image heading and create another class price -->
+            </div>
+            <div class="product" data-name="p-28">
+              <img src="img/milk.jpg" alt="">
+              <h3>Milk</h3>
+              <div class="price">Rs.180 per liter</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+            </div>
+            <div class="product" data-name="p-29">
+              <img src="img/tofu.jpg" alt="">
+              <h3>Tofu</h3>
+              <div class="price">Rs.100 per kg</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+            </div>
+            <div class="product" data-name="p-30">
+              <img src="img/churpi.jpg" alt="">
+              <h3>Churpi</h3>
+              <div class="price">Rs.50 per gram</div>
+              <div class="probutt">
+               <button type="button" onclick="submitForm()">Buy</button>
+               </div>
+            </div>
+    </div>
+</body>
+</html>
